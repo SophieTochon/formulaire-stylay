@@ -84,7 +84,7 @@ div.sign_up_form {
 #email_field {
 	border : solid #c1c0c5 1px;
 	border-radius: 3px 3px 0 0;
-	background: url("/assets/black-user-shape.png") no-repeat 95%;
+	background: asset-data-url("/assets/black-user-shape.png") no-repeat 95%;
 	background-size: 18px;
 }
 
