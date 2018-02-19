@@ -15,5 +15,59 @@
  */
 
 * {
-	border: 1px solid red !important
+	font-family: Aleo, Sans-serif;
+	font-weight: 100;
+
+}
+
+div.sign_up_page {
+	display: flex ;
+	justify-content: center
+}
+
+/* Petite colonne de gauche */
+
+div.sign_up_text {
+	padding: 100px;
+	padding-left: 30px;
+	padding-right: 120px;
+	color: #ffffff ;
+	background-color: #489AF7
+}
+
+h2.title {
+	font-size: 200%;
+	font-weight: 700
+}
+
+h4.subtitle {
+	font-weight: 500
+}
+
+p.line {
+	color: #7FFFD4
+}
+
+ul {
+	font-size: 90%;
+	line-height: 250%
+}
+
+/* Petite colonne de droite */
+
+div.sign_up_form {
+	color: #404855;
+	padding: 100px;
+	padding-left: 30px;
+	padding-right: 30px
+}
+
+div.field {
+	color: #c1c0c5
+}
+
+p.test {
+	border-radius: 2px;
+	background-color: #489AF7;
+	color: #ffffff;
 }

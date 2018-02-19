@@ -1,33 +1,43 @@
-<div class="sign_up">
+<div class="sign_up_page">
 
-<h2>Sign up</h2>
+  <div class="sign_up_text">
+    
+    <h2 class="title">formulaire_stylay</h2>
+    <h4 class="subtitle">L'inscription devient plus stylay</h4>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+    <p class="line">________</p><br />
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <ul>
+      <li>Un CSS des familles, qui fait toujours plaisir</li>
+      <li>Avec un formulaire un peu bégé</li>
+      <li>Et une petite database behind</li>
+    </ul>
+
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+  <div class="sign_up_form">
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+    <h4>Créer un compte</h4>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
 
-<%= render "devise/shared/links" %>
+      <div class="field">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Adresse email" %>
+      </div>
+
+      <div class="field">
+        <%= f.password_field :password, autocomplete: "off", placeholder: "Mot de passe" %>
+      </div>
+
+      <div class="field">
+        <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirmation du mot de passe" %>
+      </div>
+
+    <% end %>
+
+    <%= button_to "Log in", new_session_path(resource_name) %>
+
+  </div>
 
 </div>
