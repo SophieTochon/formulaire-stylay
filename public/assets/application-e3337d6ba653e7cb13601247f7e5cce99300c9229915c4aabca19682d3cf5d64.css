@@ -10,9 +10,10 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
+
 
 * {
 	font-family: Aleo, Sans-serif;
@@ -84,7 +85,7 @@ div.sign_up_form {
 #email_field {
 	border : solid #c1c0c5 1px;
 	border-radius: 3px 3px 0 0;
-	background: url("/assets/black-user-shape.png") no-repeat 95%;
+	background: url("black-user-shape.png") no-repeat 95%;
 	background-size: 18px;
 }
 
