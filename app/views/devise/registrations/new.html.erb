@@ -17,26 +17,24 @@
 
   <div class="sign_up_form">
 
-    <h4>Créer un compte</h4>
+    <h4>Entrez vos informations</h4>
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
 
-      <div class="field">
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Adresse email" %>
-      </div>
+        <div class="fields">
 
-      <div class="field">
-        <%= f.password_field :password, autocomplete: "off", placeholder: "Mot de passe" %>
-      </div>
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Adresse email", class: "field", id: "email_field" %><br />
 
-      <div class="field">
-        <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirmation du mot de passe" %>
-      </div>
+          <%= f.password_field :password, autocomplete: "off", placeholder: "Mot de passe", class: "field", id: "password_field" %><br />
+
+          <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirmation du mot de passe", class: "field", id: "password_confirmation_field" %><br />
+
+        </div>
 
     <% end %>
 
-    <%= button_to "Log in", new_session_path(resource_name) %>
+    <%= button_to "Créer un compte", new_session_path(resource_name), class: "button" %>
 
   </div>
 
