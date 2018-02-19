@@ -17,7 +17,6 @@
 * {
 	font-family: Aleo, Sans-serif;
 	font-weight: 100;
-
 }
 
 div.sign_up_page {
@@ -51,13 +50,25 @@ p.line {
 
 ul {
 	font-size: 90%;
-	line-height: 250%
+	line-height: 250%;
+	list-style-type: none;
+}
+
+#magic_wand {
+	height: 20px;
+}
+
+#women-hippie-style {
+	height: 20px;
+}
+
+#database-icon {
+	height: 20px;
 }
 
 /* Petite colonne de droite */
 
 div.sign_up_form {
-	color: #404855;
 	padding: 100px;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -66,7 +77,6 @@ div.sign_up_form {
 }
 
 .field {
-	color: #c1c0c5;
 	width: 250px;
 	padding: 15px;
 }
@@ -74,6 +84,8 @@ div.sign_up_form {
 #email_field {
 	border : solid #c1c0c5 1px;
 	border-radius: 3px 3px 0 0;
+	background: url("black-user-shape.png") no-repeat 95%;
+	background-size: 18px;
 }
 
 #password_field {
@@ -81,6 +93,9 @@ div.sign_up_form {
 	border-bottom: 0px;
 	border-left: solid #c1c0c5 1px;
 	border-right: solid #c1c0c5 1px;
+	background: url("padlock.png") no-repeat 95%;
+	background-size: 18px;
+
 }
 
 #password_confirmation_field {
