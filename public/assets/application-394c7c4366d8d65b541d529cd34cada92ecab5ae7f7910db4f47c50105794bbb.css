@@ -1,0 +1,117 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+* {
+	font-family: Aleo, Sans-serif;
+	font-weight: 100;
+}
+
+div.sign_up_page {
+	display: flex;
+	justify-content: center;
+}
+
+/* Petite colonne de gauche */
+
+div.sign_up_text {
+	padding: 100px;
+	padding-left: 30px;
+	padding-right: 120px;
+	color: #ffffff;
+	background-color: #489AF7;
+	border-radius: 5px 0 0 5px;
+}
+
+h2.title {
+	font-size: 200%;
+	font-weight: 700
+}
+
+h4.subtitle {
+	font-weight: 500
+}
+
+p.line {
+	color: #7FFFD4
+}
+
+ul {
+	font-size: 90%;
+	line-height: 250%;
+	list-style-type: none;
+}
+
+#magic_wand {
+	height: 20px;
+}
+
+#women-hippie-style {
+	height: 20px;
+}
+
+#database-icon {
+	height: 20px;
+}
+
+/* Petite colonne de droite */
+
+div.sign_up_form {
+	padding: 100px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 0 5px 5px 0;
+	border: solid #f5f6f8 1px;
+}
+
+.field {
+	width: 250px;
+	padding: 15px;
+}
+
+#email_field {
+	border : solid #c1c0c5 1px;
+	border-radius: 3px 3px 0 0;
+	background: url('/assets/black-user-shape-5775c47b3f990b0a7fd9c5b50a7e4e15d2277387e7215e53c27adccca6909e1c.png ') no-repeat 95%;
+	background-size: 18px;
+}
+
+#password_field {
+	border-top: 0px;
+	border-bottom: 0px;
+	border-left: solid #c1c0c5 1px;
+	border-right: solid #c1c0c5 1px;
+	background: url('/assets/padlock-68bcc463549148f8b312ca2148d1acb580d968d62b9bedcbb5ac0a481e99cab3.png ') no-repeat 95%;
+	background-size: 18px;
+
+}
+
+#password_confirmation_field {
+	border-top: 0px;
+	border : solid #c1c0c5 1px;
+	border-radius: 0 0 3px 3px;	
+}
+
+.button {
+	color: #ffffff;
+	font-size: 90%;
+	background-color: #489AF7;
+	width: 282px;
+	padding: 15px;
+	margin-top: 25px;
+	border-radius: 3px;
+}
+
